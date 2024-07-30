@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:text="Bài có kèm theo trình giải pt"
+            android:textSize="20dp"
+            android:textAlignment="center"
+            />
+
+        <LinearLayout
+
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:orientation="horizontal"
+            android:layout_marginTop="50dp"
+            >
+            <TextView
+                android:layout_width="100dp"
+                android:layout_height="30dp"
+                android:text="Nhập a:"
+                android:textSize="20dp"/>
+            <EditText
+                android:layout_width="280dp"
+                android:layout_height="60dp"
+                android:id="@+id/Editext1"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:orientation="horizontal"
+            android:layout_marginTop="50dp"
+            >
+            <TextView
+                android:layout_width="100dp"
+                android:layout_height="30dp"
+
+                android:text="Nhập b:"
+                android:textSize="20dp"/>
+            <EditText
+                android:layout_width="280dp"
+                android:layout_height="60dp"
+                android:id="@+id/Editext2"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:orientation="horizontal"
+            android:layout_marginTop="50dp"
+            >
+            <TextView
+                android:layout_width="100dp"
+                android:layout_height="30dp"
+                android:text="Nhập c:"
+                android:textSize="20dp"/>
+            <EditText
+                android:layout_width="280dp"
+                android:layout_height="60dp"
+                android:id="@+id/Editext3"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="67dp"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/btn_tinh"
+                android:layout_width="100dp"
+                android:layout_height="50dp"
+                android:layout_marginLeft="30dp"
+                android:text="Tính" />
+
+            <Button
+                android:id="@+id/btn_tinhtiep"
+                android:layout_width="100dp"
+                android:layout_height="50dp"
+                android:layout_marginLeft="10dp"
+                android:text="Tính Tiếp" />
+
+            <Button
+                android:id="@+id/btn_thoat"
+                android:layout_width="100dp"
+                android:layout_height="50dp"
+                android:layout_marginLeft="10dp"
+
+                android:text="Thoát" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+            <TextView
+                android:layout_marginTop="20dp"
+                android:textAlignment="center"
+                android:paddingTop="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:textSize="20dp"
+                android:hint="Nghiệm"
+                android:id="@+id/txt"/>
+        </LinearLayout>
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
